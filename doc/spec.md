@@ -32,10 +32,24 @@ b/aisis/ces
 r/x : rest
 ```
 
-The notes are accompanied with a duration specifier.
-If you omit it, it will be 4 or the same as the previous note.
+The notes are accompanied with a octave specifier and duration specifier.
+
+The octave specifeir are `,` or `'` and can be written several times.
+If you omit it, it will be always 4.
+
+```
+,,,     : 1
+,,      : 2
+,       : 3 
+Nothing : 4
+'       : 5
+''      : 6
+'''     : 7
+```
+
 
 Duration specificator are `1`, `2`, `4`, `8`, `16` and `32`.
+If you omit it, it will be 4 or the same as the previous note.
 You can append `.` to add half of the specifier.
 
 Example:
